@@ -4,7 +4,7 @@ pipeline {
 
         // Define environment variables
         AWS_DEFAULT_REGION = 'us-east-1' //This will stay the same since your AWS_DEFAULT_REGION name is the same 
-        AWS_ACCOUNT_ID = '3569778682086' //change this to your AWS_ACCOUNT_ID
+        AWS_ACCOUNT_ID = '356977868208' //change this to your AWS_ACCOUNT_ID
         ECR_REPOSITORY = 'my-application-repo' //This will stay the same since your ECR_REPOSITORY name is the same 
         FRONTEND_SERVICE_NAME = 'frontend-service' //This will stay the same since your FRONTEND_SERVICE_NAME name is the same
         BACKEND_SERVICE_NAME = 'backend-service'  //This will stay the same since your BACKEND_SERVICE_NAME name is the same
