@@ -1,5 +1,5 @@
 resource "aws_ecs_service" "frontend_service" {
-  name            = "frontend-service"
+  name            = "frontend-service-v2"
   cluster         = aws_ecs_cluster.my_cluster.arn
   task_definition = aws_ecs_task_definition.frontend.arn
   desired_count   = 1

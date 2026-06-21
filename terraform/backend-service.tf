@@ -1,5 +1,5 @@
 resource "aws_ecs_service" "backend_service" {
-  name            = "backend-service"
+  name            = "backend-service-v2"
   cluster         = aws_ecs_cluster.my_cluster.id
   task_definition = aws_ecs_task_definition.backend.arn
   desired_count   = 1
