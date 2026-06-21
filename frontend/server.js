@@ -4,7 +4,7 @@ const PORT = 3000;
 
 app.get('/', async (req, res) => {
     try {
-        const response = await fetch('http://backend-test:8080');
+        const response = await fetch('http://10.0.3.160:8080');
         const data = await response.json();
 
         res.send(`
