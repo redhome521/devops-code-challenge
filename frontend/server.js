@@ -4,7 +4,7 @@ const PORT = 3000;
 
 app.get('/', async (req, res) => {
     try {
-        const response = await fetch('http://10.0.3.160:8080');
+        const response = await fetch('http://internal-backend-alb-947393876.us-east-1.elb.amazonaws.com:8080');
         const data = await response.json();
 
         res.send(`

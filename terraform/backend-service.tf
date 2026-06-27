@@ -11,6 +11,12 @@ resource "aws_ecs_service" "backend_service" {
     security_groups  = [aws_security_group.backend_security_group.id]
   }
 
+  load_balancer {
+    target_group_arn = aws_lb_target_group.backend_tg.arn
+    container_name   = "backend"
+    container_port   = 8080
+  }
+
   depends_on = [
     aws_ecs_cluster.my_cluster,
     aws_ecs_task_definition.backend
